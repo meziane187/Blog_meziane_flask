@@ -24,5 +24,7 @@ class DevelopmentConfig(Config):
     TESTING = True
     FLASK_ENV = 'development'
     LOG_LEVEL = 'DEBUG'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS= False
 
 
