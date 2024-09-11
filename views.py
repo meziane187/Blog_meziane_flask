@@ -3,5 +3,5 @@ from app import app
 
 @app.route('/')
 def index():
-    return "Hello world"
-
+    name="meziane"
+    return render_template("index.html",name=name)
