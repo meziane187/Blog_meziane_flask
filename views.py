@@ -1,7 +1,11 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import render_template
 from app import app
+from posts import routes
+
+
 
 @app.route('/')
 def index():
-    name="meziane"
-    return render_template("index.html",name=name)
+    return render_template("index.html")
+
+
